@@ -1434,7 +1434,7 @@ do
                 ZIndex = 5;
             });
                 local Glow = Instance.new("ImageLabel", Outer)
-                Glow.Name = tostring(funcs.generate_string(32))
+                Glow.Name = "Glow"
                 Glow.BackgroundTransparency = 1
                 Glow.Image = "http://www.roblox.com/asset/?id=18245826428"
                 Glow.ImageColor3 = Color3.fromRGB(255, 255, 255) 
