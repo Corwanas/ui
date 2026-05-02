@@ -1433,6 +1433,18 @@ do
                 Size = UDim2.new(1, -4, 0, 20);
                 ZIndex = 5;
             });
+                local Glow = Instance.new("ImageLabel", Outer)
+                Glow.Name = tostring(funcs.generate_string(32))
+                Glow.BackgroundTransparency = 1
+                Glow.Image = "http://www.roblox.com/asset/?id=18245826428"
+                Glow.ImageColor3 = Color3.fromRGB(255, 255, 255) 
+                Glow.ImageTransparency = 0.8
+                Glow.ScaleType = Enum.ScaleType.Slice
+                Glow.SliceCenter = Rect.new(21, 21, 79, 79)
+                Glow.Size = UDim2.new(1, 40, 1, 40)
+                Glow.Position = UDim2.new(0, -20, 0, -20)
+                Glow.ZIndex = 2
+                Glow.Visible = false
 
             local Inner = Library:Create('Frame', {
                 BackgroundColor3 = Library.MainColor;
@@ -2968,21 +2980,6 @@ function Library:CreateWindow(...)
         Visible = false;
         ZIndex = 1;
         Parent = ScreenGui;
-    });
-
-    local Glow = Library:Create('ImageLabel', {
-        Name = 'Glow',
-        BackgroundTransparency = 1,
-        Image = 'http://www.roblox.com/asset/?id=18245826428',
-        ImageColor3 = Color3.fromRGB(255, 255, 255),
-        ImageTransparency = 0.8,
-        ScaleType = Enum.ScaleType.Slice,
-        SliceCenter = Rect.new(21, 21, 79, 79),
-        Size = UDim2.new(1, 40, 1, 40),
-        Position = UDim2.new(0, -20, 0, -20),
-        ZIndex = 0,
-        Visible = false,
-        Parent = Outer;
     });
 
     Library:MakeDraggable(Outer, 25);
